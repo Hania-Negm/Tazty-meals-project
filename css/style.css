@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #363634;
+}
+
+/*Start Header*/
+.main-header{
+    padding: 0 15px;
+    position: sticky;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+  
+.main-header .row{
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.ul-header{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    gap: 56px;
+}
+
+.li-header a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: "Poppins", "serif";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.li-header:hover{
+    transition: all linear 0.3s;
+    transform: translateY(2px);
+}
+
+.li-header a:hover .line{
+    color: #F2B530;
+    border-bottom: 2px solid #F2B530;
+    transition: all linear 0.3s;
+    transform: translateY(2px);
+}
+
+.header-links{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.line-2{
+    border-bottom: 2px solid #F2B530;
+}
+
+.first-link{
+    display: inline-block;
+    text-decoration: none;
+    min-width: 149px;
+    padding: 8px;
+    color: #F2B530;
+    font-family: "Poppins", "serif";
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 32px;
+}
+
+.first-link:hover{
+    background: #F2B530;
+    color: #FFF;
+    transition: all linear 0.3s;
+    transform: scale(1);
+}
+
+.second-link{
+    display: inline-block;
+    text-decoration: none;
+    min-width: 149px;
+    padding: 8px;
+    color: #FFF;
+    font-family: "Poppins", "serif";
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 32px;
+    border: 1px solid #F2B530;
+    background: #F2B530;
+}
+
+.second-link:hover{
+    background: #FFF;
+    color: #F2B530;
+    transition: all linear 0.3s;
+    transform: scale(1);
+}
+
+.menu {
+    background: transparent;
+    border: 0;
+    display: none;
+}
+  
+  .menu svg{
+    width: 48px;
+    height: 48px;
+}
+
+@media(max-width: 1040px){
+    nav{display: none;}
+    .menu{display: block;}
+}
+
+@media(max-width: 640px){
+    .header-links{display: none;}
+}
+/*End Header*/
+
+/*Start Hero Section*/
+.hero-section{
+    padding: 100px 15px 0 15px;
+}
+
+.hero-section .row{
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.hero-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.hero-heading h1{
+    color: #FFF;
+    font-family: "Playfair Display", "serif";
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.color-1{
+    color: #F2B530;
+}
+
+.color-2{
+    color: #CD3625;
+}
+
+.hero-heading p{
+    color: #949494;
+    font-family: "Poppins", "serif";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hero-links{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.first-hero-link{
+    display: inline-block;
+    text-decoration: none;
+    min-width: 160px;
+    padding: 8px;
+    color: #FFF;
+    font-family: "Poppins", "serif";
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 32px;
+    border: 1px solid #CD3625;
+    background: #CD3625;
+}
+
+.first-hero-link:hover{
+    background: #FFF;
+    color: #CD3625;
+    transition: all linear 0.3s;
+    transform: scale(1);
+}
+
+.hero-img{
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.hero-section .bottom {
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero-section .bottom .col-4{
+    padding: 0;
+    margin-top: 20px;
+}
+
+.item{
+    flex-shrink: 0;
+    min-height: 100%;
+    display: flex;
+    padding: 32px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.item-img{
+    border-radius: 200px;
+}
+
+.item-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.item-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    min-height: 100%;
+}
+
+.item-content h2{
+    color: #FFF;
+    font-family: "Poppins", "serif";
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.item-content p{
+    color: #949494;
+    font-family: "Poppins", "serif";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.order{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.order span{
+    color: #FFF;
+    font-family: "Poppins", "serif";
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.order a{
+    display: inline-block;
+    text-decoration: none;
+    min-width: 120px;
+    padding: 10px;
+    color: #FFF;
+    font-family: "Poppins", "serif";
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 32px;
+    border: 1px solid #F2B530;
+    background: #F2B530;
+}
+
+.order a:hover{
+    background: #FFF;
+    color: #F2B530;
+    transition: all linear 0.3s;
+    transform: scale(1);
+}
+
+@media(max-width: 1184px){
+    .hero-section .row{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .hero-heading{
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .hero-heading h1{
+        font-size: 50px;
+    }
+
+    .hero-links{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-section .bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section .row .col-4{
+        width: 100%;
+    }
+
+    .item{
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding: 20px 8px;
+    }
+}
+
+/*End Hero Section*/
